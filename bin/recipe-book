@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
-require './lib/recipe_book.rb'
+require "bundler/setup"
+require "recipe_book"
 
 RecipeBook::CLI.new.call

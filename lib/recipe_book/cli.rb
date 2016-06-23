@@ -8,18 +8,17 @@ class RecipeBook::CLI
   end
 
   def welcome
-    puts "----------- Welcome to Andrew's Recipe Book -----------"
-    puts "             (courtesy of blueapron.com)"
+    puts "----------- Classic Mixed Drink Recipe Book -----------"
     puts ''
   end
 
   def list_recipes
-    puts "----------------- Blue Apron Recipes -----------------"
+    puts "--------------------- Drink List ---------------------"
     puts ''
     puts "list recipes"
-    #RecipeBook::Recipes.all.each.with_index(1) do |recipe, index|
-      #puts "#{index}. #{recipe}"
-    #end
+    RecipeBook::Recipe.all.each.with_index(1) do |recipe, index|
+      #puts "#{index}. #{recipe.name}"
+    end
   end
 
   def start
