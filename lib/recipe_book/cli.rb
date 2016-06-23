@@ -34,9 +34,9 @@ class RecipeBook::CLI
       puts ''
       input = gets.strip.to_i
 
-      #recipe = RecipeBook::Recipe.find(input)
+      recipe = RecipeBook::Recipe.find(input.to_i)
 
-      #show_recipe(recipe)
+      show_recipe(recipe)
       puts ''
       puts "Want to see a different recipe? Enter 'yes' or 'no'."
       puts ''
@@ -53,7 +53,20 @@ class RecipeBook::CLI
     end
   end # => end of start method
 
-  def show_recipe(number)
+  def show_recipe(recipe)
+
+    puts ''
+    puts "--------------------- #{recipe.name.upcase} ---------------------"
+    puts ""
+    puts "#{recipe.description}"
+    puts ""
+    puts "  Ingredients"
+    puts "---------------"
+    puts "#{recipe.ingredients}"
+    puts ""
+    puts "  Instructions"
+    puts "---------------"
+    puts "#{recipe.instructions}"
 
   end
 
