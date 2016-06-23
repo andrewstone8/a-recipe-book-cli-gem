@@ -15,9 +15,8 @@ class RecipeBook::CLI
   def list_recipes
     puts "--------------------- Drink List ---------------------"
     puts ''
-    puts "list recipes"
-    RecipeBook::Recipe.all.each.with_index(1) do |recipe, index|
-      #puts "#{index}. #{recipe.name}"
+    RecipeBook::Recipe.all.each.with_index(1) do |r, i|
+      puts "#{i}. #{r.name}"
     end
   end
 
@@ -29,15 +28,13 @@ class RecipeBook::CLI
     while input != "exit"
       puts ''
       puts ''
+      puts "What are you in the mood for?"
       puts ''
-      puts ''
-      puts "What looks tasty?"
-      puts ''
-      puts "Enter the number of the recipe you want to see."
+      puts "Enter the number of the drink recipe you want to see."
       puts ''
       input = gets.strip.to_i
 
-      #recipe = RecipeBook::Recipes.find(input)
+      #recipe = RecipeBook::Recipe.find(input)
 
       #show_recipe(recipe)
       puts ''
@@ -49,7 +46,7 @@ class RecipeBook::CLI
           start
         when 'no'
           puts ''
-          puts "Bon Appetit!"
+          puts "Cheers!"
           puts ''
           exit
         end
