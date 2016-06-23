@@ -1,5 +1,3 @@
-require "recipe_book/version"
+require_relative "recipe_book/version"
+require_relative '../lib/recipe_book/cli.rb'
 
-module RecipeBook
-  # Your code goes here...
-end
