@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in recipe_book.gemspec
+gem "pry"
+gem "nokogiri"
+gem "certified", "~> 1.0"
 gemspec
