@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install recipe_book recipe-book
+    $ gem install recipe_book
 
 ## Usage
 
