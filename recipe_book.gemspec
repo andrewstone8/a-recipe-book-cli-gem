@@ -13,9 +13,8 @@ Gem::Specification.new do |spec|
   spec.summary       = "This is a classic mixed drink recipe book."
   spec.homepage      = "https://github.com/andrewstone8/a-recipe-book-cli-gem/"
 
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  spec.files         = ["lib/recipe_book/recipe.rb", "lib/recipe_book/cli.rb", "lib/recipe_book.rb"]
   spec.executables   = ['recipe-book']
-  spec.require_paths = ["lib", "lib/recipe_book"]
 
   spec.add_development_dependency "bundler", "~> 1.11"
   spec.add_development_dependency "rake", "~> 10.0"
