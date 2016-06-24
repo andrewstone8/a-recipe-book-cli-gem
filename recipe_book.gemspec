@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["andrewstone8@gmail.com"]
   spec.license       = "MIT"
   
-  spec.summary       = {"This is a classic mixed drink recipe book."}
+  spec.summary       = "This is a classic mixed drink recipe book."
   spec.homepage      = "https://github.com/andrewstone8/a-recipe-book-cli-gem/"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
