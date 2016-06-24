@@ -56,6 +56,15 @@ class RecipeBook::CLI
   def show_recipe(recipe)
     puts ""
     puts "--------------------- #{recipe.name.upcase} ---------------------"
+    puts ""
+    puts "#{recipe.description}"
+    puts ""
+    puts "---------- Ingredients ----------"
+    puts "#{recipe.ingredients}"
+    puts ""
+    puts "--------- Instructions ---------"
+    puts "#{recipe.instructions}"
+    puts ""
 
 
   end

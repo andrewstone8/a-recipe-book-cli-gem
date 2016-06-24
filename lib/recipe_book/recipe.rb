@@ -30,21 +30,18 @@ class RecipeBook::Recipe
   end
 
   def description
-    #goes to url associated with drink
-    #pulls ingredients from page using nokogiri
-    #takes data and assigns to ingredients instance variable
+    doc = Nokogiri::HTML(open(self.url))
+    self.description = doc.search(".summaryrecipe").text
   end
 
-  #def ingredients
-    #goes to url associated with drink
-    #pulls ingredients from page using nokogiri
-    #takes data and assigns to ingredients instance variable
-  #end
+  def ingredients
+    doc = Nokogiri::HTML(open(self.url))
+    self.ingredients = doc.search(".ingredient").text
+  end
 
-  #def instructions
-    #goes to url associated with drink
-    #pulls ingredients from page using nokogiri
-    #takes data and assigns to instructions instance variable
-  #end
+  def instructions
+    doc = Nokogiri::HTML(open(self.url))
+    self.instructions = doc.search(".instructions").text
+  end
 
 end # => end recipe class
