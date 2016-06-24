@@ -16,12 +16,11 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install recipe_book
+    $ gem install recipe_book recipe-book
 
 ## Usage
 
-Type the below and follow the on-screen prompts.
-    $ recipe_book
+Run: `recipe-book` after installing the gem.
 
 ## Development
 
