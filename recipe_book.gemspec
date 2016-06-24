@@ -8,10 +8,10 @@ Gem::Specification.new do |spec|
   spec.version       = RecipeBook::VERSION
   spec.authors       = ["andrewstone8"]
   spec.email         = ["andrewstone8@gmail.com"]
-
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.license       = "MIT"
+  
+  spec.summary       = {"This is a classic mixed drink recipe book."}
+  spec.homepage      = "https://github.com/andrewstone8/a-recipe-book-cli-gem/"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
