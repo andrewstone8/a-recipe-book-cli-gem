@@ -15,8 +15,8 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
-  spec.executables   = 'recipe-book'
-  spec.require_paths = ["lib"]
+  spec.executables   = ['recipe-book']
+  spec.require_paths = ["lib", "lib/recipe_book"]
 
   spec.add_development_dependency "bundler", "~> 1.11"
   spec.add_development_dependency "rake", "~> 10.0"
