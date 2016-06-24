@@ -54,19 +54,9 @@ class RecipeBook::CLI
   end # => end of start method
 
   def show_recipe(recipe)
-
-    puts ''
+    puts ""
     puts "--------------------- #{recipe.name.upcase} ---------------------"
-    puts ""
-    puts "#{recipe.description}"
-    puts ""
-    puts "  Ingredients"
-    puts "---------------"
-    puts "#{recipe.ingredients}"
-    puts ""
-    puts "  Instructions"
-    puts "---------------"
-    puts "#{recipe.instructions}"
+
 
   end
 
